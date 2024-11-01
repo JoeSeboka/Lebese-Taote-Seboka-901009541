@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesotho Hub - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="business.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Lesotho Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+                <li><a href="tips.html"><i class="fas fa-lightbulb"></i> Business Tips</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="jumbotron text-center">
+            <h2>Welcome to Lesotho Hub</h2>
+            <p>Your place to connect with local businesses and producers.</p>
+            <button id="toggleCategories" class="btn btn-primary btn-lg" style="padding: 10px 20px; cursor: pointer;">Show Categories</button>
+        </div>
+        <div class="product-grid">
+            <button class="product-card" data-toggle="modal" data-target="#farmersModal" aria-label="View Farmers' Products" style="display: none;">
+                <img src="GettyImages-1659089572-scaled.jpg" alt="Local farmers' products" class="product-image">
+                <h3>Farmers</h3>
+                <p>Explore the local farmers' products.</p>
+            </button>
+            <button class="product-card" data-toggle="modal" data-target="#handcraftsModal" aria-label="View Handcrafts" style="display: none;">
+                <img src="basothohats-highres-scaled.jpg" alt="Unique handmade items" class="product-image">
+                <h3>Handcrafts</h3>
+                <p>Find unique handmade items.</p>
+            </button>
+            <button class="product-card" data-toggle="modal" data-target="#servicesModal" aria-label="View Services" style="display: none;">
+                <img src="services-1.jpg" alt="Local service providers" class="product-image">
+                <h3>Services</h3>
+                <p>Discover local service providers.</p>
+            </button>
+        </div>
+    </main>
+
+    <div class="modal fade" id="farmersModal" tabindex="-1" role="dialog" aria-labelledby="farmersModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="farmersModalLabel">Farmers' Products and Prices</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-item">
+                        <img src="20210729_093327.jpg" alt="Product 1" class="product-image">
+                        <h6>Dairy Produce</h6>
+                        <p>Distributed by JoeSeboka 57929579 - Price: From 10.00 to 200 LSL </p>
+                    </div>
+                    <div class="product-item">
+                        <img src="Best-produce-to-sell-at-farmers-market-Featured.jpg" alt="Product 2" class="product-image">
+                        <h6>Assorted Vegtables</h6>
+                        <p>Freshly Picked vegtebables- Price: From 2.00 to 100.00 LSL </p>
+                    </div>
+                    <div class="product-item">
+                        <img src="farmers-market-produce-fresh-food-preview.jpg" alt="Product 3" class="product-image">
+                        <h6>Product 3</h6>
+                        <p>Fresh Delictable Fruits- Price: From 2.00 to 100 LSL </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="handcraftsModal" tabindex="-1" role="dialog" aria-labelledby="handcraftsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="handcraftsModalLabel">Handcrafts and Prices</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-item">
+                        <img src="8.-Bonono-Merchant-apparel.jpg" alt="Handcraft 1" class="product-image">
+                        <h6>Handcraft 1</h6>
+                        <p>Bonobo Batho Blanket - Price: From 800 to 2000 LSL </p>
+                    </div>
+                    <div class="product-item">
+                        <img src="PRODUCTS-CATEGORIES-bags-1200x1600.jpg" alt="Handcraft 2" class="product-image">
+                        <h6>Handcraft 2</h6>
+                        <p>Babaganosh Back Pack - Price: From 600 to 1200 LSL </p>
+                    </div>
+                    <div class="product-item">
+                        <img src="traditional-lesotho-straw-hats-BKP647.jpg" class="product-image">
+                        <h6>Handcraft 3</h6>
+                        <p>Traditional bASOTHO Straw Hats - Price: From 300 to 500 LSL </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="servicesModal" tabindex="-1" role="dialog" aria-labelledby="servicesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="servicesModalLabel">Services and Prices</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-item">
+                        <img src="03-large.jpg" alt="Service 1" class="product-image">
+                        <h6>Service 1</h6>
+                        <p>Computer Repairs & Maintanace - Price: From 300 to 2000 LSL </p>
+                    </div>
+                    <div class="product-item">
+                        <img src="1717602894750.jpg" alt="Service 2" class="product-image">
+                        <h6>Service 2</h6>
+                        <p>Personal Traners- Price:250.00 to 1500.00 LSL </p>
+                    </div>
+                    <div class="product-item">
+                        <img src="20240602_104451.jpg" alt="Service 3" class="product-image">
+                        <h6>Service 3</h6>
+                        <p>Hair Styling- Price: From 50.00 to  1000.00 LSL </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-nav text-center" style="margin-top: 40px;">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p class="text-center">&copy; JoeSeboka@2024</p>
+    </footer>
+</body>
+</html>
