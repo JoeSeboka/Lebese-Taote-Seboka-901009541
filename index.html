@@ -34,7 +34,7 @@
         </div>
         <div class="product-grid">
             <button class="product-card" data-toggle="modal" data-target="#farmersModal" aria-label="View Farmers' Products" style="display: none;">
-                <img src="GettyImages-1659089572-scaled.jpg" alt="Local farmers' products" class="product-image">
+                <img src="HomegrownPhotoshoot_0004-1440x810.jpg" alt="Local farmers' products" class="product-image">
                 <h3>Farmers</h3>
                 <p>Explore the local farmers' products.</p>
             </button>
@@ -50,6 +50,22 @@
             </button>
         </div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleButton = document.getElementById("toggleCategories");
+            const productCards = document.querySelectorAll(".product-card");
+    
+            toggleButton.addEventListener("click", function() {
+                productCards.forEach(card => {
+                    card.style.display = (card.style.display === "none" || card.style.display === "") ? "block" : "none";
+                });
+    
+                // Toggle button text between "Show Categories" and "Hide Categories"
+                toggleButton.textContent = toggleButton.textContent === "Show Categories" ? "Hide Categories" : "Show Categories";
+            });
+        });
+    </script>
+    
 
     <div class="modal fade" id="farmersModal" tabindex="-1" role="dialog" aria-labelledby="farmersModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
